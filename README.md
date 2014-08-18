@@ -18,15 +18,16 @@ This includes three files
 		- apriori_result.txt: the generated results (all frequent itemsets and association rules) from weka apriori
 		- association_rules.txt: all the association rules generated from weka apriori
 * data_clean
+
 		- PairCount.java: mapreduce algorithm to count coocurrances of pairs in the whole dataset and cutoff those infrequent pairs according to a min_support threshold
 		- TextPair.java: User-defined type of pair of likes
 		- HighFreqItems.java: mapreduce algorithm to count frequency of all likes in the whole dataset and cutoff thoes infrequent likes according to a min_support threshold
-   
+
+* run.sh
+		
+		-run the weka on sampled data to retrive all frequent itemset and association rules
+		
 Dependency
 
-* The required dependency is Numpy
+* The required dependency is Weka
 
-To run the program
-
-* python assign_tag.py
-* python calc_sim.py > recommended_videos.txt
